@@ -1,35 +1,32 @@
-import openai
-import semantic
+from bard import prompt
+# print(prompt("what is today's weather?"))
+# import insta
+from functions import *
 
-
-openai.api_key = "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"
-model_engine = "text-davinci-003"
 while True:
-    prompt = (input("type.."))
+    q = input("type.. ")
 
-    if prompt == "exit":
+    if q == "exit" or q == "quit" or q == "bye":
         break
+
+    if "minimize all" in q:
+        min_all()
+
+    if "minimize" in q:
+        min_top()
+
+    if "increase volume" in q or "volume increase" in q or "volume up" in q:
+        vol_up()
+
+    if "decrease volume" in q or "volume decrease" in q or "volume down" in q:
+        vol_down()
+
+    if "restore windows" in q:
+        restore_min()
+
+
+
     else:
-        completion = openai.Completion.create(
-            engine=model_engine,
-            prompt=prompt,
-            max_tokens=60,
-            n=1,
-            stop=None,
-            temperature=0.5,
-        )
-
-        response = completion.choices[0].text.strip()
-        print(response)
-
-
-
-
-
-
-
-
-
-
+        print(prompt(q))
 
 
