@@ -124,9 +124,6 @@ while True:
     elif "page down" in q:
         page_down()
 
-    elif "print screen" in q:
-        print()
-
     elif "open command prompt" in q:
         open_command_prompt()
 
@@ -134,5 +131,6 @@ while True:
         snap_layouts()
     else:
         print(prompt(q))
+
 
 #battery_check()
