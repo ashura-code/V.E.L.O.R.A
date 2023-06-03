@@ -2,6 +2,7 @@ from bard import prompt
 # print(prompt("what is today's weather?"))
 # import insta
 from functions import *
+# from power import *
 
 
 while True:
@@ -41,7 +42,7 @@ while True:
         lock_screen()
 
     elif "enter full screen" in q or "maximize the window" in q:
-        fullminscr()
+        full_min_scr()
 
     elif "show desktop" in q or "hide desktop" in q:
         hide_show_scr()
@@ -87,7 +88,51 @@ while True:
 
     elif "go to previous page" in q or "navigate to previous page" in q:
         browser_prev()
-    
+    elif "quick settings" in q:
+        quick_settings()
+
+    elif "open widgets" in q:
+        widgets()
+
+    elif "show notifications" in q:
+        notifications()
+
+    elif "open calendar" in q:
+        calendar()
+
+    elif "new desktop" in q:
+        new_desktop()
+
+    elif "shift to next desktop" in q:
+        shift_next_desktop()
+
+    elif "shift to previous desktop" in q:
+        shift_per_desktop()
+
+    elif "delete desktop" in q:
+        delete_desktop()
+
+    elif "play or pause" in q:
+        play_pause()
+
+    elif "mute volume" in q:
+        volume_mute()
+
+    elif "page up" in q:
+        page_up()
+
+    elif "page down" in q:
+        page_down()
+
+    elif "print screen" in q:
+        print()
+
+    elif "open command prompt" in q:
+        open_command_prompt()
+
+    elif "snap layouts" in q:
+        snap_layouts()
     else:
         print(prompt(q))
 
+#battery_check()
