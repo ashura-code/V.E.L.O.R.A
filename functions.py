@@ -163,9 +163,6 @@ def page_down():
     pyautogui.hotkey('pagedown')
 
 
-def print():
-    pyautogui.hotkey('print')
-
 
 import subprocess
 
