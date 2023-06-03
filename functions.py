@@ -5,16 +5,14 @@ def min_all():
     pyautogui.hotkey('super', 'm')
 
 
-
 def vol_up(n=1):
     for i in range(0, n):
         pyautogui.hotkey('volumeup')
 
+
 def vol_down(n=1):
     for i in range(0, n):
         pyautogui.hotkey('volumedown')
-
-
 
 
 def restore_min():
@@ -47,7 +45,7 @@ def lock_screen():
 
 
 # lock_screen()
-def fullminscr():
+def full_min_scr():
     pyautogui.hotkey('f11')
 
 
@@ -113,3 +111,78 @@ def browser_next():
 
 def browser_prev():
     pyautogui.hotkey('alt', 'left')
+
+
+## from auto or fuctions
+def quick_settings():
+    pyautogui.hotkey('super', 'a')
+
+
+def widgets():
+    pyautogui.hotkey('super', 'w')
+
+
+def notifications():
+    pyautogui.hotkey('super', 'n')
+
+
+def calendar():
+    pyautogui.hotkey('super', 'n')
+
+
+# desktop movements
+def new_desktop():
+    pyautogui.hotkey('super', 'ctrl', 'd')
+
+
+def shift_next_desktop():
+    pyautogui.hotkey('super', 'ctrl', 'right')
+
+
+def shift_per_desktop():
+    pyautogui.hotkey('super', 'ctrl', 'left')
+
+
+def delete_desktop():  # it delete the current desktop
+    pyautogui.hotkey('super', 'ctrl', 'f4')
+
+
+def play_pause():
+    pyautogui.hotkey('playpause')
+
+
+def volume_mute():
+    pyautogui.hotkey('volumemute')
+
+
+def page_up():
+    pyautogui.hotkey('pageup')
+
+
+def page_down():
+    pyautogui.hotkey('pagedown')
+
+
+def print():
+    pyautogui.hotkey('print')
+
+
+import subprocess
+
+
+def open_command_prompt():
+    # Open command prompt
+    subprocess.run(["cmd"])
+
+
+def backspace():  # useless
+    pyautogui.hotkey('backspace')
+
+
+def mode_change():  # useless
+    pyautogui.hotkey('modechange')
+
+
+# only half done
+def snap_layouts():
+    pyautogui.hotkey('super', 'z')
